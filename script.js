@@ -1316,33 +1316,21 @@ const questions = [
     id: 126,
     category: "Signs",
     question: "",
-    answers: [
-      "إنتبه طريق منزلق",
-      "إنتبه طريق ضيق",
-      "إنتبه منحدر خطر",
-    ],
+    answers: ["إنتبه طريق منزلق", "إنتبه طريق ضيق", "إنتبه منحدر خطر"],
     correctAnswer: "إنتبه طريق منزلق",
   },
   {
     id: 127,
     category: "Signs",
     question: "",
-    answers: [
-      "إنتبه أولاد أو مدرسة",
-      "ممر غير مؤمن",
-      "ممنوع المرور",
-    ],
+    answers: ["إنتبه أولاد أو مدرسة", "ممر غير مؤمن", "ممنوع المرور"],
     correctAnswer: "إنتبه أولاد أو مدرسة",
   },
   {
     id: 128,
     category: "Signs",
     question: "",
-    answers: [
-      "حيوانات متشرّدة",
-      "ممنوع للحيوانات",
-      "إنتبه حيوانات",
-    ],
+    answers: ["حيوانات متشرّدة", "ممنوع للحيوانات", "إنتبه حيوانات"],
     correctAnswer: "إنتبه حيوانات",
   },
 ];
@@ -1422,6 +1410,7 @@ function renderQuestion() {
     button.className = "answer-option";
     button.textContent = answer;
     button.addEventListener("click", () => {
+      console.log(3);
       const correct = answer === q.correctAnswer;
       showToast(correct ? "Correct!" : "Incorrect.", correct);
     });
@@ -1466,7 +1455,6 @@ function jumpToQuestion() {
 questionJumpInput.addEventListener("change", jumpToQuestion);
 questionJumpInput.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
-    e.preventDefault();
     jumpToQuestion();
   }
 });
