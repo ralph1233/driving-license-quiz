@@ -178,6 +178,18 @@ body {
   letter-spacing: 0.05em;
 }
 
+.question-sign-wrap {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.question-sign-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .question-text {
   margin: 0 0 1rem;
   font-size: 1.125rem;

@@ -1197,20 +1197,14 @@ const questions = [
   {
     id: 114,
     category: "Law",
-    question:
-      "ماذا يجب أن تفعل عندما تتوقف السيارة عن التحرك لأكثر من دقيقة؟",
-    answers: [
-      "وضع ناقل السرعة (فيتيس) على ال (N)",
-      "لا شيء",
-      "إطفاء المحرك",
-    ],
+    question: "ماذا يجب أن تفعل عندما تتوقف السيارة عن التحرك لأكثر من دقيقة؟",
+    answers: ["وضع ناقل السرعة (فيتيس) على ال (N)", "لا شيء", "إطفاء المحرك"],
     correctAnswer: "إطفاء المحرك",
   },
   {
     id: 115,
     category: "Law",
-    question:
-      "كيف يمكن تحسين أداء المحرك وتقليل مستوى الانبعاثات الضارة؟",
+    question: "كيف يمكن تحسين أداء المحرك وتقليل مستوى الانبعاثات الضارة؟",
     answers: [
       "تغيير مياه المحرك بانتظام",
       "استخدام وقود نظيف يتوافق مع المعايير الدولية",
@@ -1243,8 +1237,7 @@ const questions = [
   {
     id: 118,
     category: "Law",
-    question:
-      "ما هي نسبة زيادة استهلاك الوقود عند الاستعمال الدائم للمكيف؟",
+    question: "ما هي نسبة زيادة استهلاك الوقود عند الاستعمال الدائم للمكيف؟",
     answers: ["0.3", "0.1", "0.2"],
     correctAnswer: "0.1",
   },
@@ -1272,6 +1265,13 @@ const questions = [
     correctAnswer:
       "القيادة الإقتصادية والصديقة للبيئة من خلال إتباع طرق قيادة سهلة، ذكية، ومسؤولة تساهم في خفض استهلاك الوقود وتحد من تلوث الهواء الناجم عن النقل البري",
   },
+  {
+    id: 121,
+    category: "Signs",
+    question: "",
+    answers: ["إنتبه طريق منزلق", "إنتبه مطبات", "إنتبه انخفاضات"],
+    correctAnswer: "إنتبه انخفاضات",
+  },
 ];
 
 // ----- State -----
@@ -1280,6 +1280,8 @@ let currentIndex = 0;
 // ----- DOM refs -----
 const questionCard = document.getElementById("question-card");
 const questionCategory = document.getElementById("question-category");
+const questionSignWrap = document.getElementById("question-sign-wrap");
+const questionSignImage = document.getElementById("question-sign-image");
 const questionText = document.getElementById("question-text");
 const answersList = document.getElementById("answers-list");
 const progressTotal = document.querySelector(".progress-total");
@@ -1297,7 +1299,7 @@ function showToast(message, isCorrect) {
   toastTimeout = setTimeout(() => {
     toastEl.classList.remove("visible");
     toastTimeout = null;
-  }, 2500);
+  }, 1000);
 }
 
 // ----- Render current question -----
@@ -1305,7 +1307,10 @@ function renderQuestion() {
   const total = questions.length;
   if (total === 0) {
     questionCategory.textContent = "";
+    questionSignWrap.hidden = true;
+    questionSignImage.src = "";
     questionText.textContent = "لا توجد أسئلة.";
+    questionText.hidden = false;
     answersList.innerHTML = "";
     progressTotal.textContent = "0";
     questionJumpInput.value = "0";
@@ -1317,7 +1322,19 @@ function renderQuestion() {
 
   const q = questions[currentIndex];
   questionCategory.textContent = q.category || "";
-  questionText.textContent = q.question || "";
+  const isSign = (q.category || "").toLowerCase() === "signs";
+  if (isSign) {
+    questionSignWrap.hidden = false;
+    questionSignImage.src = "signs images/" + q.id + ".png";
+    questionSignImage.alt = q.question || "Road sign";
+    questionText.textContent = "";
+    questionText.hidden = true;
+  } else {
+    questionSignWrap.hidden = true;
+    questionSignImage.src = "";
+    questionText.textContent = q.question || "";
+    questionText.hidden = false;
+  }
   progressTotal.textContent = String(total);
   questionJumpInput.value = String(currentIndex + 1);
   questionJumpInput.min = "1";
