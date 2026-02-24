@@ -1312,6 +1312,39 @@ const questions = [
     ],
     correctAnswer: "انتبه منعطفان أولهما يسار",
   },
+  {
+    id: 126,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إنتبه طريق منزلق",
+      "إنتبه طريق ضيق",
+      "إنتبه منحدر خطر",
+    ],
+    correctAnswer: "إنتبه طريق منزلق",
+  },
+  {
+    id: 127,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إنتبه أولاد أو مدرسة",
+      "ممر غير مؤمن",
+      "ممنوع المرور",
+    ],
+    correctAnswer: "إنتبه أولاد أو مدرسة",
+  },
+  {
+    id: 128,
+    category: "Signs",
+    question: "",
+    answers: [
+      "حيوانات متشرّدة",
+      "ممنوع للحيوانات",
+      "إنتبه حيوانات",
+    ],
+    correctAnswer: "إنتبه حيوانات",
+  },
 ];
 
 // ----- State -----
