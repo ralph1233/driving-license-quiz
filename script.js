@@ -1043,7 +1043,7 @@ const questions = [
   },
   {
     id: 100,
-    category: "Law",
+    category: "Safety",
     question:
       "عندما تقود دراجتك النارية ذات عادم (أشبمان) مفرغ عمداً ويصدر صوتاً مرتفعاً جداً فإن ذلك:",
     answers: [
