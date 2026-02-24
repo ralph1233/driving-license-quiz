@@ -237,20 +237,133 @@ const questions = {
       ],
       correctAnswer: "كل المرايا وخاصة في المرآة اليمنى والبقعة العمياء",
     },
-    {
-      id: 23,
-      category: "Law",
-      question:
-        "الخطر الأكبر الذي تشكله المركبات المتوقفة إلى جانب الرصيف الأيمن على السائق المار بقربها هو:",
-      answers: [
-        "فتح أحد الأبواب فجأة",
-        "نزول أحد الركاب",
-        "خروج طفل بشكل مفاجئ من بين المركبات المتوقفة",
-      ],
-      correctAnswer: "خروج طفل بشكل مفاجئ من بين المركبات المتوقفة",
-    },
+    // {
+    //   id: 23,
+    //   category: "Law",
+    //   question:
+    //     "الخطر الأكبر الذي تشكله المركبات المتوقفة إلى جانب الرصيف الأيمن على السائق المار بقربها هو:",
+    //   answers: [
+    //     "فتح أحد الأبواب فجأة",
+    //     "نزول أحد الركاب",
+    //     "خروج طفل بشكل مفاجئ من بين المركبات المتوقفة",
+    //   ],
+    //   correctAnswer: "خروج طفل بشكل مفاجئ من بين المركبات المتوقفة",
+    // },
   ],
-  page3: [],
+  // page3: [],
 };
 
-console.log(Object.keys(questions));
+// ----- Flatten all questions from every page -----
+const allQuestions = Object.keys(questions).reduce((acc, pageKey) => {
+  return acc.concat(questions[pageKey]);
+}, []);
+
+// ----- State -----
+let currentIndex = 0;
+
+// ----- DOM refs -----
+const questionCard = document.getElementById("question-card");
+const questionCategory = document.getElementById("question-category");
+const questionText = document.getElementById("question-text");
+const answersList = document.getElementById("answers-list");
+const progressTotal = document.querySelector(".progress-total");
+const questionJumpInput = document.getElementById("question-jump");
+const toastEl = document.getElementById("toast");
+const btnPrev = document.getElementById("btn-prev");
+const btnNext = document.getElementById("btn-next");
+
+// ----- Toast -----
+let toastTimeout = null;
+function showToast(message, isCorrect) {
+  if (toastTimeout) clearTimeout(toastTimeout);
+  toastEl.textContent = message;
+  toastEl.className = "toast visible " + (isCorrect ? "correct" : "incorrect");
+  toastTimeout = setTimeout(() => {
+    toastEl.classList.remove("visible");
+    toastTimeout = null;
+  }, 2500);
+}
+
+// ----- Render current question -----
+function renderQuestion() {
+  const total = allQuestions.length;
+  if (total === 0) {
+    questionCategory.textContent = "";
+    questionText.textContent = "لا توجد أسئلة.";
+    answersList.innerHTML = "";
+    progressTotal.textContent = "0";
+    questionJumpInput.value = "0";
+    questionJumpInput.disabled = true;
+    btnPrev.disabled = true;
+    btnNext.disabled = true;
+    return;
+  }
+
+  const q = allQuestions[currentIndex];
+  questionCategory.textContent = q.category || "";
+  questionText.textContent = q.question || "";
+  progressTotal.textContent = String(total);
+  questionJumpInput.value = String(currentIndex + 1);
+  questionJumpInput.min = "1";
+  questionJumpInput.max = String(total);
+  questionJumpInput.disabled = false;
+
+  answersList.innerHTML = "";
+  (q.answers || []).forEach((answer) => {
+    const li = document.createElement("li");
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "answer-option";
+    button.textContent = answer;
+    button.addEventListener("click", () => {
+      const correct = answer === q.correctAnswer;
+      showToast(correct ? "Correct!" : "Incorrect.", correct);
+    });
+    li.appendChild(button);
+    answersList.appendChild(li);
+  });
+
+  btnPrev.disabled = currentIndex <= 0;
+  btnNext.disabled = currentIndex >= total - 1;
+}
+
+// ----- Navigation -----
+function goPrev() {
+  if (currentIndex > 0) {
+    currentIndex -= 1;
+    renderQuestion();
+  }
+}
+
+function goNext() {
+  if (currentIndex < allQuestions.length - 1) {
+    currentIndex += 1;
+    renderQuestion();
+  }
+}
+
+btnPrev.addEventListener("click", goPrev);
+btnNext.addEventListener("click", goNext);
+
+// ----- Jump to question -----
+function jumpToQuestion() {
+  const total = allQuestions.length;
+  if (total === 0) return;
+  let num = parseInt(questionJumpInput.value, 10);
+  if (Number.isNaN(num) || num < 1) num = 1;
+  if (num > total) num = total;
+  currentIndex = num - 1;
+  questionJumpInput.value = String(num);
+  renderQuestion();
+}
+
+questionJumpInput.addEventListener("change", jumpToQuestion);
+questionJumpInput.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    jumpToQuestion();
+  }
+});
+
+// ----- Initial render -----
+renderQuestion();
