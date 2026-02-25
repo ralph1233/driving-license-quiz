@@ -1759,4 +1759,15 @@ export const questions = [
     ],
     correctAnswer: "ممر إجباري نحو اليسار",
   },
+  {
+    id: 171,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إتجاه إختياري مستقيم",
+      "ممنوع الإلتفاف إلى اليمين",
+      "ممر إجباري يمين",
+    ],
+    correctAnswer: "ممر إجباري يمين",
+  },
 ];
