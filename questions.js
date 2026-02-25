@@ -1511,4 +1511,15 @@ export const questions = [
     ],
     correctAnswer: "قف",
   },
+  {
+    id: 147,
+    category: "Signs",
+    question: "",
+    answers: [
+      "طريق على خط واحد",
+      "ممنوع الوقوف",
+      "ممنوع الدخول لعموم السيارات",
+    ],
+    correctAnswer: "ممنوع الدخول لعموم السيارات",
+  },
 ];
