@@ -1814,4 +1814,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع الإلتفاف يميناً",
   },
+  {
+    id: 176,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إلتفاف إلزامي",
+      "وجهة السير",
+      "ممنوع الإلتفاف",
+    ],
+    correctAnswer: "ممنوع الإلتفاف",
+  },
 ];
