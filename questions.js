@@ -1555,4 +1555,15 @@ export const questions = [
     ],
     correctAnswer: "السرعة القصوى 30 كلم في الساعة",
   },
+  {
+    id: 151,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع التزمير",
+      "ممنوع الوقوف",
+      "مسرح",
+    ],
+    correctAnswer: "ممنوع التزمير",
+  },
 ];
