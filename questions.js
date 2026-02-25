@@ -1533,4 +1533,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع المرور",
   },
+  {
+    id: 149,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع التجاوز للشاحنات",
+      "ممنوع التجاوز لجميع المركبات",
+      "ممنوع المرور",
+    ],
+    correctAnswer: "ممنوع التجاوز لجميع المركبات",
+  },
 ];
