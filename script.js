@@ -1384,6 +1384,13 @@ const questions = [
     ],
     correctAnswer: "انتبه تقاطع مع طرقات بدون أفضلية",
   },
+  {
+    id: 134,
+    category: "Signs",
+    question: "",
+    answers: ["طريق أفضلية", "موقف لحظة", "نهاية تحديد السرعة"],
+    correctAnswer: "طريق أفضلية",
+  },
 ];
 
 // ----- State -----
