@@ -1715,4 +1715,15 @@ export const questions = [
     ],
     correctAnswer: "الإلتفاف على اليسار",
   },
+  {
+    id: 167,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إتجاه إختياري, يمين ويسار",
+      "ممنوع المرور يمين ويسار",
+      "إتجاه إجباري مستقيم",
+    ],
+    correctAnswer: "إتجاه إختياري, يمين ويسار",
+  },
 ];
