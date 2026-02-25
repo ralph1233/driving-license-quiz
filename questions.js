@@ -1803,4 +1803,15 @@ export const questions = [
     ],
     correctAnswer: "طريق للمشاة والدراجات فقط",
   },
+  {
+    id: 175,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع الإلتفاف يميناً",
+      "إتجاه إجباري يمين",
+      "وجهة السير",
+    ],
+    correctAnswer: "ممنوع الإلتفاف يميناً",
+  },
 ];
