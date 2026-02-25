@@ -1632,4 +1632,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع مرور عربات اليد",
   },
+  {
+    id: 158,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع المرور لعموم السيارات",
+      "ممنوع وقوف السيارات",
+      "طريق مخصص للسيارات",
+    ],
+    correctAnswer: "ممنوع المرور لعموم السيارات",
+  },
 ];
