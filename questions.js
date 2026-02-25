@@ -1686,4 +1686,15 @@ export const questions = [
     ],
     correctAnswer: "نهاية الإشارات الممنوعة",
   },
+  {
+    id: 164,
+    category: "Signs",
+    question: "",
+    answers: [
+      "تحديد السرعة",
+      "بداية تحديد السرعة",
+      "نهاية تحديد السرعة",
+    ],
+    correctAnswer: "نهاية تحديد السرعة",
+  },
 ];
