@@ -1500,4 +1500,15 @@ export const questions = [
     ],
     correctAnswer: "انتبه أفضلية المرور للسيارات المتجهة من الجهة المقابلة",
   },
+  {
+    id: 146,
+    category: "Signs",
+    question: "",
+    answers: [
+      "طريق على خط واحد",
+      "ممنوع الدخول",
+      "قف",
+    ],
+    correctAnswer: "قف",
+  },
 ];
