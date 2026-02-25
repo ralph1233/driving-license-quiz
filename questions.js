@@ -1621,4 +1621,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع المرور للدراجات النارية",
   },
+  {
+    id: 157,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع وقوف عربات اليد",
+      "طريق مخصص لعربات اليد",
+      "ممنوع مرور عربات اليد",
+    ],
+    correctAnswer: "ممنوع مرور عربات اليد",
+  },
 ];
