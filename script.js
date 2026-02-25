@@ -1424,6 +1424,17 @@ const questions = [
     ],
     correctAnswer: "إنتبه طريق ضيق",
   },
+  {
+    id: 138,
+    category: "Signs",
+    question: "",
+    answers: [
+      "أفضلية مرور لليمين",
+      "طريق ضيق على اليمين",
+      "انتبه طريق ضيق على اليسار",
+    ],
+    correctAnswer: "انتبه طريق ضيق على اليسار",
+  },
 ];
 
 // ----- State -----
