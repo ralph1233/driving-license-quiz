@@ -1825,4 +1825,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع الإلتفاف",
   },
+  {
+    id: 177,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع مرور الأوتوبيسات",
+      "طريق مخصص للأوتوبيسات",
+      "نهاية منع تجاوز الأوتوبيسات",
+    ],
+    correctAnswer: "ممنوع مرور الأوتوبيسات",
+  },
 ];
