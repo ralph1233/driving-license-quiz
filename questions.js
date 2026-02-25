@@ -1697,4 +1697,15 @@ export const questions = [
     ],
     correctAnswer: "نهاية تحديد السرعة",
   },
+  {
+    id: 165,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إتجاه إجباري على اليسار",
+      "ممنوع الإلتفاف على اليمين",
+      "الإلتفاف على اليمين",
+    ],
+    correctAnswer: "الإلتفاف على اليمين",
+  },
 ];
