@@ -1344,6 +1344,17 @@ const questions = [
     ],
     correctAnswer: "إنتبه منطقة سير على خطين",
   },
+  {
+    id: 130,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع الإلتفاف",
+      "إنتبه مستديرة",
+      "إنتبه أخطار متنوعة",
+    ],
+    correctAnswer: "إنتبه مستديرة",
+  },
 ];
 
 // ----- State -----
