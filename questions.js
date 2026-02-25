@@ -1522,4 +1522,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع الدخول لعموم السيارات",
   },
+  {
+    id: 148,
+    category: "Signs",
+    question: "",
+    answers: [
+      "أخطار متنوعة",
+      "ممنوع الوقوف",
+      "ممنوع المرور",
+    ],
+    correctAnswer: "ممنوع المرور",
+  },
 ];
