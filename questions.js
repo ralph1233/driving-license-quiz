@@ -1770,4 +1770,15 @@ export const questions = [
     ],
     correctAnswer: "ممر إجباري يمين",
   },
+  {
+    id: 172,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممر إجباري يمين أو يسار",
+      "ممنوع الإلتفاف يمين أو يسار",
+      "إتجاه أختياري نحو اليمين",
+    ],
+    correctAnswer: "ممر إجباري يمين أو يسار",
+  },
 ];
