@@ -1599,4 +1599,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع مرور المشاة",
   },
+  {
+    id: 155,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممر إجباري للسيارات",
+      "طريق مخصص للدراجات",
+      "ممنوع المرور للدراجات",
+    ],
+    correctAnswer: "ممنوع المرور للدراجات",
+  },
 ];
