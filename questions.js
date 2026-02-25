@@ -1588,4 +1588,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع مرور عربات الحيوانات",
   },
+  {
+    id: 154,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع مرور السيارات",
+      "إنتبه طريق مخصص للمشاة",
+      "ممنوع مرور المشاة",
+    ],
+    correctAnswer: "ممنوع مرور المشاة",
+  },
 ];
