@@ -1463,6 +1463,7 @@ let currentIndex = 0;
 
 // ----- DOM refs -----
 const questionCard = document.getElementById("question-card");
+const questionId = document.getElementById("question-id");
 const questionCategory = document.getElementById("question-category");
 const questionSignWrap = document.getElementById("question-sign-wrap");
 const questionSignImage = document.getElementById("question-sign-image");
@@ -1490,6 +1491,7 @@ function showToast(message, isCorrect) {
 function renderQuestion() {
   const total = questions.length;
   if (total === 0) {
+    questionId.textContent = "";
     questionCategory.textContent = "";
     questionSignWrap.hidden = true;
     questionSignImage.src = "";
@@ -1505,6 +1507,7 @@ function renderQuestion() {
   }
 
   const q = questions[currentIndex];
+  questionId.textContent = q.id != null ? "#" + q.id : "";
   questionCategory.textContent = q.category || "";
   const isSign = (q.category || "").toLowerCase() === "signs";
   if (isSign) {
