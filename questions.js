@@ -1504,11 +1504,7 @@ export const questions = [
     id: 146,
     category: "Signs",
     question: "",
-    answers: [
-      "طريق على خط واحد",
-      "ممنوع الدخول",
-      "قف",
-    ],
+    answers: ["طريق على خط واحد", "ممنوع الدخول", "قف"],
     correctAnswer: "قف",
   },
   {
@@ -1526,11 +1522,7 @@ export const questions = [
     id: 148,
     category: "Signs",
     question: "",
-    answers: [
-      "أخطار متنوعة",
-      "ممنوع الوقوف",
-      "ممنوع المرور",
-    ],
+    answers: ["أخطار متنوعة", "ممنوع الوقوف", "ممنوع المرور"],
     correctAnswer: "ممنوع المرور",
   },
   {
@@ -1559,11 +1551,7 @@ export const questions = [
     id: 151,
     category: "Signs",
     question: "",
-    answers: [
-      "ممنوع التزمير",
-      "ممنوع الوقوف",
-      "مسرح",
-    ],
+    answers: ["ممنوع التزمير", "ممنوع الوقوف", "مسرح"],
     correctAnswer: "ممنوع التزمير",
   },
   {
@@ -1642,5 +1630,16 @@ export const questions = [
       "طريق مخصص للسيارات",
     ],
     correctAnswer: "ممنوع المرور لعموم السيارات",
+  },
+  {
+    id: 159,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع مرور السيارات التي يزيد عرضها عن 2,3 متر",
+      "ممنوع مرور الشاحنات التي يزيد طولها عن 2,3 متر",
+      "ممنوع مرور الشاحنات",
+    ],
+    correctAnswer: "ممنوع مرور السيارات التي يزيد عرضها عن 2,3 متر",
   },
 ];
