@@ -1566,4 +1566,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع التزمير",
   },
+  {
+    id: 152,
+    category: "Signs",
+    question: "",
+    answers: [
+      "طريق مخصص للشاحنات",
+      "مسموح التجاوز للشاحنات",
+      "ممنوع التجاوز للشاحنات",
+    ],
+    correctAnswer: "ممنوع التجاوز للشاحنات",
+  },
 ];
