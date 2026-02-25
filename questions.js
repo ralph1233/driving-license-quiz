@@ -1456,4 +1456,15 @@ export const questions = [
     ],
     correctAnswer: "إنتبه إشارات كهربائية",
   },
+  {
+    id: 142,
+    category: "Signs",
+    question: "",
+    answers: [
+      "انتبه مخاطر متنوعة",
+      "ممنوع المرور",
+      "انتبه أفسح الطريق - طريق أفضلية أمامك",
+    ],
+    correctAnswer: "انتبه مخاطر متنوعة",
+  },
 ];
