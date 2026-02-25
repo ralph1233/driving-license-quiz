@@ -1748,4 +1748,15 @@ export const questions = [
     ],
     correctAnswer: "إتجاه إختياري مستقيم أو يسار",
   },
+  {
+    id: 170,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إتجاه إختياري نحو اليمين",
+      "خط الطريق الرئيسية",
+      "ممر إجباري نحو اليسار",
+    ],
+    correctAnswer: "ممر إجباري نحو اليسار",
+  },
 ];
