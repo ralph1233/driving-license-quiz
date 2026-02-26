@@ -2106,4 +2106,11 @@ export const questions = [
     ],
     correctAnswer: "موقف تاكسي",
   },
+  {
+    id: 208,
+    category: "Signs",
+    question: "",
+    answers: ["إزالة فورية", "إستعلامات", "شرطة"],
+    correctAnswer: "شرطة",
+  },
 ];
