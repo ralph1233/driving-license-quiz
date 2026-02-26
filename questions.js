@@ -1941,4 +1941,11 @@ export const questions = [
     ],
     correctAnswer: "وجهة السير إلى اليمين",
   },
+  {
+    id: 189,
+    category: "Signs",
+    question: "",
+    answers: ["موقع توقف", "وجهة سير مستديرة", "ممنوع الإلتفاف"],
+    correctAnswer: "وجهة سير مستديرة",
+  },
 ];
