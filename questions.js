@@ -2053,4 +2053,11 @@ export const questions = [
     answers: ["نقطة إلتقاء خطين", "طريق يصل بخط رئيسي", "طريق غير نافذ"],
     correctAnswer: "طريق غير نافذ",
   },
+  {
+    id: 201,
+    category: "Signs",
+    question: "",
+    answers: ["إنتبه مدرج طيران", "إنتبه جسر", "أوتوستراد"],
+    correctAnswer: "أوتوستراد",
+  },
 ];
