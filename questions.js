@@ -1988,4 +1988,11 @@ export const questions = [
     answers: ["طريق للمشاة", "ممنوع المرور للمشاة", "منتزه"],
     correctAnswer: "طريق للمشاة",
   },
+  {
+    id: 194,
+    category: "Signs",
+    question: "",
+    answers: ["ممر للمشاة فوق الطريق", "نهاية طريق للمشاة", "طريق مخصص للمشاة"],
+    correctAnswer: "نهاية طريق للمشاة",
+  },
 ];
