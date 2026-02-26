@@ -2148,4 +2148,11 @@ export const questions = [
     answers: ["مركز للتصليح", "مطعم", "فندق"],
     correctAnswer: "فندق",
   },
+  {
+    id: 214,
+    category: "Signs",
+    question: "",
+    answers: ["إستعلامات", "مرطبات", "مطعم"],
+    correctAnswer: "مطعم",
+  },
 ];
