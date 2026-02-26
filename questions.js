@@ -1930,4 +1930,15 @@ export const questions = [
     ],
     correctAnswer: "وجهة السير إلى اليسار",
   },
+  {
+    id: 188,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع الوقوف ناحية اليمين",
+      "ممنوع الإتجاه نحو اليمين",
+      "وجهة السير إلى اليمين",
+    ],
+    correctAnswer: "وجهة السير إلى اليمين",
+  },
 ];
