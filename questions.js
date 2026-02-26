@@ -2127,4 +2127,11 @@ export const questions = [
     answers: ["موقف مخصص للشرطة", "إطفاء", "شرطة البلدية"],
     correctAnswer: "شرطة البلدية",
   },
+  {
+    id: 211,
+    category: "Signs",
+    question: "",
+    answers: ["تقاطع خطر", "إنعطاف غير مباشر إلى اليسار", "خط الطريق الرئيسية"],
+    correctAnswer: "خط الطريق الرئيسية",
+  },
 ];
