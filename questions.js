@@ -1919,4 +1919,15 @@ export const questions = [
     ],
     correctAnswer: "إتجاه إجباري مستقيم",
   },
+  {
+    id: 187,
+    category: "Signs",
+    question: "",
+    answers: [
+      "ممنوع الوقوف يساراً",
+      "ممنوع الإتجاه نحو اليسار",
+      "وجهة السير إلى اليسار",
+    ],
+    correctAnswer: "وجهة السير إلى اليسار",
+  },
 ];
