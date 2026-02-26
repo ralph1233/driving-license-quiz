@@ -2169,4 +2169,11 @@ export const questions = [
     answers: ["محطة وقود", "مركز للتصليح", "مطعم"],
     correctAnswer: "محطة وقود",
   },
+  {
+    id: 217,
+    category: "Signs",
+    question: "",
+    answers: ["خط سير مخصص للباصات", "ممنوع وقوف الباصات", "موقف باص"],
+    correctAnswer: "موقف باص",
+  },
 ];
