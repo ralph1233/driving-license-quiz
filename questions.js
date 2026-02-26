@@ -2194,4 +2194,11 @@ export const questions = [
     answers: ["خفف السرعة", "إنعطاف غير مباشر إلى اليسار", "إنعطاف"],
     correctAnswer: "إنعطاف",
   },
+  {
+    id: 220,
+    category: "Signs",
+    question: "",
+    answers: ["خفف السرعة", "إنعطاف غير مباشر إلى اليسار", "إنعطاف"],
+    correctAnswer: "إنعطاف غير مباشر إلى اليسار",
+  },
 ];
