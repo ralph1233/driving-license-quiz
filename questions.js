@@ -2035,4 +2035,15 @@ export const questions = [
     ],
     correctAnswer: "إنتبه ممر للمشاة",
   },
+  {
+    id: 199,
+    category: "Signs",
+    question: "",
+    answers: [
+      "حلبة مخصصة للدراجات الهوائية",
+      "يمنع ركوب الدراجات الهوائية",
+      "ممر مخصص للدراجات",
+    ],
+    correctAnswer: "ممر مخصص للدراجات",
+  },
 ];
