@@ -1959,4 +1959,15 @@ export const questions = [
     ],
     correctAnswer: "أدنى سرعة إجبارية",
   },
+  {
+    id: 191,
+    category: "Signs",
+    question: "",
+    answers: [
+      "نهاية أدنى سرعة",
+      "السرعة القصوى 30",
+      "ممنوع الوقوف أكثر من ثلاثين دقيقة",
+    ],
+    correctAnswer: "نهاية أدنى سرعة",
+  },
 ];
