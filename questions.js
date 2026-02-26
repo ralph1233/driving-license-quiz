@@ -2095,4 +2095,15 @@ export const questions = [
     answers: ["ممنوع الوقوف", "موقف", "موقف لحظة"],
     correctAnswer: "موقف لحظة",
   },
+  {
+    id: 207,
+    category: "Signs",
+    question: "",
+    answers: [
+      "موقف تاكسي",
+      "موقف للعموم - ممنوع للتاكسي أكثر من سيارتين",
+      "ممنوع وقوف سيارات التاكسي",
+    ],
+    correctAnswer: "موقف تاكسي",
+  },
 ];
