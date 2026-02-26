@@ -2046,4 +2046,11 @@ export const questions = [
     ],
     correctAnswer: "ممر مخصص للدراجات",
   },
+  {
+    id: 200,
+    category: "Signs",
+    question: "",
+    answers: ["نقطة إلتقاء خطين", "طريق يصل بخط رئيسي", "طريق غير نافذ"],
+    correctAnswer: "طريق غير نافذ",
+  },
 ];
