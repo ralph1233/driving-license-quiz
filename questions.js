@@ -1894,4 +1894,11 @@ export const questions = [
     ],
     correctAnswer: "نهاية منع تجاوز الشاحنات",
   },
+  {
+    id: 184,
+    category: "Signs",
+    question: "",
+    answers: ["ممنوع الوقوف", "ممنوع التجاوز لجميع المركبات", "ممنوع المرور"],
+    correctAnswer: "ممنوع الوقوف",
+  },
 ];
