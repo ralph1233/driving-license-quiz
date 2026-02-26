@@ -1872,4 +1872,15 @@ export const questions = [
     ],
     correctAnswer: "ممنوع مرور الآليات الزراعية",
   },
+  {
+    id: 182,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إنتبه منطقة سير على خطين",
+      "نهاية منع تجاوز الشاحنات",
+      "نهاية منع التجاوز",
+    ],
+    correctAnswer: "نهاية منع التجاوز",
+  },
 ];
