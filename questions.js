@@ -2141,4 +2141,11 @@ export const questions = [
     answers: ["موقف", "موقف لحظة", "ممنوع الوقوف"],
     correctAnswer: "موقف",
   },
+  {
+    id: 213,
+    category: "Signs",
+    question: "",
+    answers: ["مركز للتصليح", "مطعم", "فندق"],
+    correctAnswer: "فندق",
+  },
 ];
