@@ -1883,4 +1883,15 @@ export const questions = [
     ],
     correctAnswer: "نهاية منع التجاوز",
   },
+  {
+    id: 183,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إنتبه منطقة سير على خطين",
+      "طريق مخصص للشاحنات فقط",
+      "نهاية منع تجاوز الشاحنات",
+    ],
+    correctAnswer: "نهاية منع تجاوز الشاحنات",
+  },
 ];
