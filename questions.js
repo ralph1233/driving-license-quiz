@@ -2074,4 +2074,11 @@ export const questions = [
     answers: ["جسر", "نفق", "إنتبه طريق وعرة"],
     correctAnswer: "نفق",
   },
+  {
+    id: 204,
+    category: "Signs",
+    question: "",
+    answers: ["للأطباء فقط", "مركز نجدة - مساعدة", "موقف مخصص للمعاقين"],
+    correctAnswer: "مركز نجدة - مساعدة",
+  },
 ];
