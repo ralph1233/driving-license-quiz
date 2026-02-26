@@ -2162,4 +2162,11 @@ export const questions = [
     answers: ["مطعم", "هاتف", "محطة وقود"],
     correctAnswer: "هاتف",
   },
+  {
+    id: 216,
+    category: "Signs",
+    question: "",
+    answers: ["محطة وقود", "مركز للتصليح", "مطعم"],
+    correctAnswer: "محطة وقود",
+  },
 ];
