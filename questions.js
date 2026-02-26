@@ -2134,4 +2134,11 @@ export const questions = [
     answers: ["تقاطع خطر", "إنعطاف غير مباشر إلى اليسار", "خط الطريق الرئيسية"],
     correctAnswer: "خط الطريق الرئيسية",
   },
+  {
+    id: 212,
+    category: "Signs",
+    question: "",
+    answers: ["موقف", "موقف لحظة", "ممنوع الوقوف"],
+    correctAnswer: "موقف",
+  },
 ];
