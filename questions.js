@@ -2088,4 +2088,11 @@ export const questions = [
     answers: ["ممنوع وقوف المعاقين", "موقف لحظة", "موقف مخصص للمعوقين"],
     correctAnswer: "موقف مخصص للمعوقين",
   },
+  {
+    id: 206,
+    category: "Signs",
+    question: "",
+    answers: ["ممنوع الوقوف", "موقف", "موقف لحظة"],
+    correctAnswer: "موقف لحظة",
+  },
 ];
