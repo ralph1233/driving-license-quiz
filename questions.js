@@ -1981,4 +1981,11 @@ export const questions = [
     ],
     correctAnswer: "السيارات المجهزة بسلاسل معدنية فقط",
   },
+  {
+    id: 193,
+    category: "Signs",
+    question: "",
+    answers: ["طريق للمشاة", "ممنوع المرور للمشاة", "منتزه"],
+    correctAnswer: "طريق للمشاة",
+  },
 ];
