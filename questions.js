@@ -2187,4 +2187,11 @@ export const questions = [
     ],
     correctAnswer: "موقع للمقطورات والخيم",
   },
+  {
+    id: 219,
+    category: "Signs",
+    question: "",
+    answers: ["خفف السرعة", "إنعطاف غير مباشر إلى اليسار", "إنعطاف"],
+    correctAnswer: "إنعطاف",
+  },
 ];
