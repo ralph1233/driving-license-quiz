@@ -2120,4 +2120,11 @@ export const questions = [
     answers: ["محطة وقود", "إستعلامات", "مركز انترنت"],
     correctAnswer: "إستعلامات",
   },
+  {
+    id: 210,
+    category: "Signs",
+    question: "",
+    answers: ["موقف مخصص للشرطة", "إطفاء", "شرطة البلدية"],
+    correctAnswer: "شرطة البلدية",
+  },
 ];
