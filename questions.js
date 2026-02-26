@@ -2067,4 +2067,11 @@ export const questions = [
     answers: ["جسر فوق الطريق", "نهاية الأوتوستراد", "إنتبه طريق ضيق"],
     correctAnswer: "نهاية الأوتوستراد",
   },
+  {
+    id: 203,
+    category: "Signs",
+    question: "",
+    answers: ["جسر", "نفق", "إنتبه طريق وعرة"],
+    correctAnswer: "نفق",
+  },
 ];
