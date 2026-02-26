@@ -2017,4 +2017,11 @@ export const questions = [
     ],
     correctAnswer: "ممنوع الإلتفاف يساراً",
   },
+  {
+    id: 197,
+    category: "Signs",
+    question: "",
+    answers: ["إنتبه جسر متحرك", "طريق على خطين موصول بجسر", "مستشفى"],
+    correctAnswer: "مستشفى",
+  },
 ];
