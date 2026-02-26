@@ -2006,4 +2006,15 @@ export const questions = [
     ],
     correctAnswer: "حلبة مخصصة للدراجات الهوائية",
   },
+  {
+    id: 196,
+    category: "Signs",
+    question: "",
+    answers: [
+      "إتجاه إلزامي نحو اليسار",
+      "ممنوع الوقوف يساراً",
+      "ممنوع الإلتفاف يساراً",
+    ],
+    correctAnswer: "ممنوع الإلتفاف يساراً",
+  },
 ];
