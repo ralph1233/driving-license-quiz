@@ -2060,4 +2060,11 @@ export const questions = [
     answers: ["إنتبه مدرج طيران", "إنتبه جسر", "أوتوستراد"],
     correctAnswer: "أوتوستراد",
   },
+  {
+    id: 202,
+    category: "Signs",
+    question: "",
+    answers: ["جسر فوق الطريق", "نهاية الأوتوستراد", "إنتبه طريق ضيق"],
+    correctAnswer: "نهاية الأوتوستراد",
+  },
 ];
